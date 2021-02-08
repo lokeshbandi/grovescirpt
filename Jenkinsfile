@@ -1,15 +1,14 @@
 #!/usr/bin/env groovy
 pipeline {
     agent any
-
     stages {
         stage('stage one') {
             steps {
                 script {
-                    echo "git repo: $GIT_REPO"
-                    echo "git branch: $GIT_BRANCH"
                     tags_extra = "value_1"
                 }
+                echo "git repo: $GIT_REPO"
+                echo "git branch: $GIT_BRANCH"
                 echo "tags_extra: ${tags_extra}"
             }
         }
