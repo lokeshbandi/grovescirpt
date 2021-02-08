@@ -7,7 +7,7 @@ pipeline {
                 script {
                     tags_extra = "value_1"
                 }
-                echo "git branch: ${GIT_BRANCH,fullName=false}"
+                echo "git branch: ${GIT_BRANCH,fullName=true}"
                 echo "tags_extra: ${tags_extra}"
             }
         }
